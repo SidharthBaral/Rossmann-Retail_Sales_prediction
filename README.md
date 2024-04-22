@@ -48,10 +48,12 @@ Performed data cleaning to handle missing values and ensure data consistency.
 - Inorder to generalise the performance of the tunned model Cross-validation is also performed.
 Following result is achived in the unseen_data using tunned model:
 
-                Algorithm	          MSE_Score   RMSPE_Score    R2_Score
-0	RandomForestRegressor(BaseModel)	3.576360	   0.042206      0.945452
-1	RandomForestRegressor1	          3.567391	   0.042098      0.945725
-2	RandomForestRegressor2	          3.564572	   0.042056      0.945811
+                | Algorithm       | MSE_Score | RMSPE_Score | R2_Score |
+|---------------------------------|-----------|-------------|----------|
+| RandomForestRegressor(BaseModel)| 3.576360  | 0.042206    | 0.945452 |
+| RandomForestRegressor1          | 3.567391  | 0.042098    | 0.945725 |
+| RandomForestRegressor2          | 3.564572  | 0.042056    | 0.945811 |
+
 
 
 
