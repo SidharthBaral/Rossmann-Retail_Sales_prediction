@@ -12,7 +12,7 @@ This project contains two executable file, a technical document and a presentati
 ## Executable Files:
 
 - Regression Problem - Rossmann Retail Sales Prediction_Final_1.ipynb - Collab notebook containing data summary, exploration, visualisations and modeling.
--Regression Problem - Rossmann Retail Sales Prediction_Part2.ipynb - Collab notebook containg model hyperparameter tuning, Cross-validation, model performance, evaluation and conclusion.
+- Regression Problem - Rossmann Retail Sales Prediction_Part2.ipynb - Collab notebook containg model hyperparameter tuning, Cross-validation, model performance, evaluation and conclusion.
 
 # Project Summary
 
