@@ -11,8 +11,8 @@ This project contains two executable file, a technical document and a presentati
 
 ## Executable Files:
 
-Regression Problem - Rossmann Retail Sales Prediction_Final_1.ipynb - Collab notebook containing data summary, exploration, visualisations and modeling.
-Regression Problem - Rossmann Retail Sales Prediction_Part2.ipynb - Collab notebook containg model hyperparameter tuning, Cross-validation, model performance, evaluation and conclusion.
+- Regression Problem - Rossmann Retail Sales Prediction_Final_1.ipynb - Collab notebook containing data summary, exploration, visualisations and modeling.
+-Regression Problem - Rossmann Retail Sales Prediction_Part2.ipynb - Collab notebook containg model hyperparameter tuning, Cross-validation, model performance, evaluation and conclusion.
 
 # Project Summary
 
@@ -25,30 +25,30 @@ Performed data cleaning to handle missing values and ensure data consistency.
 
 ## Exploratory Data Analysis (EDA):
 
-Conducted in-depth EDA by exploring univariate, bivariate, and multivariate relationships.
-Generated insightful visualizations to uncover patterns and trends in the data.
-Extracted meaningful insights to inform future decision-making in the machine learning pipeline.
+- Conducted in-depth EDA by exploring univariate, bivariate, and multivariate relationships.
+- Generated insightful visualizations to uncover patterns and trends in the data.
+- Extracted meaningful insights to inform future decision-making in the machine learning pipeline.
 
 ## Feature Engineering and Preprocessing:
-Split the preprocessed data into two parts namely 'unseen_data' and 'new_data'. 
-unseen_data - This dataset consists of last six weeks data.
-new_data - This dataset consists of all other data except last six weeks data.
-Created additional features such as PromoDuration and CompetitionDurationMonths,Average_Customer_Week, Average_Customer_Month in both datasets to capture relevant information.
-Addressed multicollinearity among independent variables.
-Bussiness filters based on categorical and numerical features are made by applying IQR technique on new_data, then the same filters are applied on the unseen_data.
-Encoded categorical variables using One-Hot Encoding for compatibility with machine learning algorithms.
-Applied various transformation techniques to achieve normal distribution of data.
+- Split the preprocessed data into two parts namely 'unseen_data' and 'new_data'. 
+- unseen_data - This dataset consists of last six weeks data.
+- new_data - This dataset consists of all other data except last six weeks data.
+- Created additional features such as PromoDuration and CompetitionDurationMonths,Average_Customer_Week, Average_Customer_Month in both datasets to capture relevant information.
+- Addressed multicollinearity among independent variables.
+- Bussiness filters based on categorical and numerical features are made by applying IQR technique on new_data, then the same filters are applied on the unseen_data.
+- Encoded categorical variables using One-Hot Encoding for compatibility with machine learning algorithms.
+- Applied various transformation techniques to achieve normal distribution of data.
 
 ## Model Selection and Training:
-unseen_data was splitted into 80:20 ratio to create X_train and X_loc_test.
-The X_loc_test is again splitted into 50:50 ratio to create val_data and test_data.
-Created several base models based on algoriths such as Decission tree regressor, XGboost regressor, LGB regressor and Random forest regressor.
-Random forest regressor is selected as final model based on the performance metrics such as MSE, RMSPE, R^2 values.
-Hyper parameter tunning was performed on the selected model(random forest regressor) which helped in improving the model performance further.
-Inorder to generalise the performance of the tunned model Cross-validation is also performed.
-The following result is achived in the unseen_data using tunned model:
+- unseen_data was splitted into 80:20 ratio to create X_train and X_loc_test.
+- The X_loc_test is again splitted into 50:50 ratio to create val_data and test_data.
+- Created several base models based on algoriths such as Decission tree regressor, XGboost regressor, LGB regressor and Random forest regressor.
+- Random forest regressor is selected as final model based on the performance metrics such as MSE, RMSPE, R^2 values.
+- Hyper parameter tunning was performed on the selected model(random forest regressor) which helped in improving the model performance further.
+- Inorder to generalise the performance of the tunned model Cross-validation is also performed.
+Following result is achived in the unseen_data using tunned model:
 
-                Algorithm	                    MSE_Score   RMSPE_Score    R2_Score
+                Algorithm	          MSE_Score   RMSPE_Score    R2_Score
 0	RandomForestRegressor(BaseModel)	3.576360	   0.042206      0.945452
 1	RandomForestRegressor1	          3.567391	   0.042098      0.945725
 2	RandomForestRegressor2	          3.564572	   0.042056      0.945811
